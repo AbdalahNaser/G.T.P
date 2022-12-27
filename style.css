@@ -1,0 +1,288 @@
+/* Background color ..............*/
+
+body,
+.Foot {
+    background: linear-gradient( to bottom, #b9a5a5, #ff3a3a);
+}
+
+.copy {
+    background: linear-gradient( to bottom, #ff3030d0, #b9a5a5);
+}
+
+
+/*logo edit.............*/
+
+.img-fluid {
+    width: 150px;
+    height: auto;
+}
+
+
+/*vid edit................*/
+
+#video {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 700px;
+}
+
+
+/* DEMO-SPECIFIC STYLES */
+
+.typewriter h1,
+.title {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: monospace;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border: 5px solid gray;
+    padding: 3px;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 0.10em;
+    /* Adjust as needed */
+    animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
+}
+
+
+/* The typing effect */
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+
+
+/* The typewriter cursor effect */
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent
+    }
+    50% {
+        border-color: #ff3030d0
+    }
+}
+
+
+/*ved..........*/
+
+.vid {
+    width: 75%;
+    height: auto;
+}
+
+.P {
+    background-image: url(img/backp.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    height: 150px;
+}
+
+
+/* Follow us color...........*/
+
+.Cole {
+    background-color: purple;
+}
+
+.co {
+    background-color: rgb(5, 84, 255);
+}
+
+
+/* Card css ....................*/
+
+
+/* back-image + size ............*/
+
+.container .GAS {
+    background-image: url(img/Gas.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 320px;
+    height: 450px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.container .PAR {
+    background-image: url(img/PART.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 320px;
+    height: 450px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.container .TECH {
+    background-image: url(img/TECH.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 320px;
+    height: 450px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+
+/* deitils Card ............*/
+
+* {
+    font-family: "GTP";
+}
+
+.container .card .contentBx {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 10;
+}
+
+.container .card:hover .contentBx {
+    height: 210px;
+}
+
+.container .card .contentBx h2 {
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white;
+    margin: 0;
+}
+
+.container .card .contentBx .size,
+.container .card .contentBx .color {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.container .card:hover .contentBx .size {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.5s;
+    color: white;
+}
+
+.container .card .contentBx .size h3,
+.container .card .contentBx .color h3 {
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 10px;
+}
+
+.container .card .contentBx a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s;
+    margin-top: 0;
+}
+
+.container .card:hover .contentBx a {
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0.75s;
+}
+
+#card_text_bg {
+    background: rgba(250, 0, 0, 0.486);
+    backdrop-filter: blur( 5.5px);
+    -webkit-backdrop-filter: blur( 5.5px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+}
+
+.Subscribe {
+    background-image: url(img/backp.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+/*Card tech page............................................................*/
+
+.get-in-touch {
+    max-width: 800px;
+    margin: 30px auto;
+    position: relative;
+}
+
+.get-in-touch .title {
+    background: -moz-linear-gradient(left, #ff3030d0 0%, #555555 100%);
+    background: -webkit-linear-gradient(left, #ff3030d0 0%, #555555 100%);
+    background: linear-gradient(to right, #ff3030d0 0%, #555555 100%);
+}
+
+.submit-btn {
+    background-color: #000;
+    background-image: linear-gradient(125deg, #555555d8, #ff3030af);
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+    padding: 15px 20px;
+    border: none;
+    width: 332px;
+}
+
+
+/*btn style + back................................*/
+
+.C {
+    background-color: #000;
+    background-image: linear-gradient(125deg, #555555d8, #ff3030af);
+}
+
+.S {
+    background-color: #000;
+    background-image: linear-gradient(125deg, #555555d8, #ff3030af);
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+    padding: 8px 16px;
+    border: none;
+    width: 200px;
+}
+
+.form_tech {
+    background: -moz-linear-gradient(left, #ff3030fb 0%, #615f5f 100%);
+    background: -webkit-linear-gradient(left, #ff3030d0 0%, #555555 100%);
+    background: linear-gradient(to right, #ff3030d0 0%, #555555 100%);
+}
